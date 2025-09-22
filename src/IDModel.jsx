@@ -306,7 +306,7 @@ const IDModel = () => {
                   Fake ID
                 </p>
 
-                <p className="text-yellow-300 mb-12 mt-2"> {formData.branch}</p>
+                <p className="text-yellow-300 mb-8 mt-6"> {formData.branch}</p>
                 <video
                   ref={videoRef2}
                   autoPlay
