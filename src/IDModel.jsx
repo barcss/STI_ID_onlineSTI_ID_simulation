@@ -320,7 +320,7 @@ const IDModel = () => {
                   src={image}
                   alt="img"
                   loading="lazy"
-                  className={`overflow-hidden object-cover rounded-lg bg-white mt-5 z-10 w-8/12 h-5/12 p-0 ${
+                  className={` rounded-lg bg-white mt-5 z-10 w-8/12 h-5/12 p-0 ${
                     onCam ? " invisible hidden" : "block visible"
                   }`}
                 />
