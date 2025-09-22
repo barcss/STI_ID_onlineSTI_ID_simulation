@@ -1,7 +1,6 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
 import Home from './Home'
 import IDModel from "./IDModel";
-import Test from "./test";
 
 const App = () => {
   return (<>
@@ -10,7 +9,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/ID" element={<IDModel/>} />
-        <Route path="/test" element={<Test/>} />
       </Routes >
       </div>
     </BrowserRouter>
