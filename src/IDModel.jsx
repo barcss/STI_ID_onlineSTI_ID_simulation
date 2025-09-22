@@ -178,7 +178,7 @@ const IDModel = () => {
                   className="white-btn w-full"
                 >
                   {" "}
-                  last year
+                  previous year
                 </button>
                 <button
                   value="add"
