@@ -5,7 +5,7 @@ import IDModel from "./IDModel";
 const App = () => {
   return (<>
     <BrowserRouter>
-    <div className=" flex justify-center home-bg">
+    <div className=" flex justify-center ">
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/ID" element={<IDModel/>} />

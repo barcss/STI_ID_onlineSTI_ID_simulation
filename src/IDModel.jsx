@@ -157,6 +157,7 @@ const IDModel = () => {
             />
             <input
               type="text"
+              pattern="[A-Za-z]+"
               name="middleInitial"
               maxLength={1}
               placeholder="Middle Initial"
@@ -175,7 +176,7 @@ const IDModel = () => {
                 <button
                   value="minus"
                   onClick={changeSchoolYear}
-                  className="white-btn w-full"
+                  className="white-btn w-full cursor-pointer"
                 >
                   {" "}
                   previous year
@@ -183,14 +184,14 @@ const IDModel = () => {
                 <button
                   value="add"
                   onClick={changeSchoolYear}
-                  className="white-btn w-full"
+                  className="white-btn w-full cursor-pointer"
                 >
                   {" "}
                   next year
                 </button>
               </div>
             </div>
-            <label htmlFor="img" className="white-btn text-center">
+            <label htmlFor="img" className="white-btn cursor-pointer text-center">
               Select image
             </label>
             <input
@@ -201,7 +202,7 @@ const IDModel = () => {
               onChange={handleImageChange}
             />
             <button
-              className={`white-blue ${
+              className={`white-blue cursor-pointer ${
                 onCam ? "invisible hidden" : "visible block"
               }`}
               onClick={() => {
@@ -211,7 +212,7 @@ const IDModel = () => {
               Use live camera
             </button>
             <button
-              className={`white-blue ${
+              className={`white-blue cursor-pointer ${
                 onCam ? "visible block" : "invisible hidden"
               }`}
               onClick={() => {
@@ -266,7 +267,7 @@ const IDModel = () => {
                   src={image}
                   alt="img"
                   loading="lazy"
-                  className={` rounded-lg bg-white mt-5 z-10 w-8/12 h-5/12 p-0 ${
+                  className={` overflow-hidden rounded-lg bg-white mt-5 z-10 w-8/12 h-5/12 p-0 ${
                     onCam ? " invisible hidden" : "block visible"
                   }`}
                 />
@@ -319,7 +320,7 @@ const IDModel = () => {
                   src={image}
                   alt="img"
                   loading="lazy"
-                  className={` rounded-lg bg-white mt-5 z-10 w-8/12 h-5/12 p-0 ${
+                  className={`overflow-hidden object-cover rounded-lg bg-white mt-5 z-10 w-8/12 h-5/12 p-0 ${
                     onCam ? " invisible hidden" : "block visible"
                   }`}
                 />
